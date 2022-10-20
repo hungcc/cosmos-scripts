@@ -22,7 +22,7 @@ source <(curl -s https://raw.githubusercontent.com/nodejumper-org/cosmos-utils/m
 
 printCyan "4. Building binaries..." && sleep 1
 
-curl -L https://download.uptick.network/download/uptick/testnet/release/v0.2.3/v0.2.3.tar.gz > uptick.tar.gz
+wget https://download.uptick.network/download/uptick/testnet/release/v0.2.3/v0.2.3.tar.gz --no-check-certificate > uptick.tar.gz
 tar -xvzf uptick.tar.gz
 sudo mv -f uptick-v0.2.3/linux/uptickd /usr/local/bin/uptickd
 rm -rf uptick.tar.gz
